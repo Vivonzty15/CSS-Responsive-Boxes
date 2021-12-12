@@ -1,3 +1,49 @@
 body {
   background: peachpuff;
 }
+
+* {
+  border: 0.5px solid black;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.a {
+  width: auto;
+  min-height: 20vh;
+}
+
+aside {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.b, .c, .d, .e, .f, .g {
+  flex-direction: row;
+  min-height: 20vh;
+  min-width: 31%;
+  align-items: center;
+  justify-content: center;
+}
+
+.h {
+  width: auto;
+  min-height: 40vh;
+}
+
+@media (min-width: 600px) {
+  aside {
+    max-width: 70%;
+  }
+
+  .h {
+    flex-wrap: wrap;
+  }
+}
